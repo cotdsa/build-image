@@ -9,7 +9,8 @@ RUN apt-get update && apt-get install -y \
     gcc \
     python-dev \
     locales \
-    python-pip
+    python-pip \
+    docker
 
 RUN dpkg-reconfigure locales && \
     locale-gen C.UTF-8 && \
