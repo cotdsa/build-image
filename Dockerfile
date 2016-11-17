@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
     docker
 
 RUN dpkg-reconfigure locales && \
-    locale-gen C.UTF-8 && \
-    /usr/sbin/update-locale LANG=C.UTF-8
+    locale-gen en_US.UTF-8 && \
+    /usr/sbin/update-locale LANG=en_US.UTF-8
 
-ENV LC_ALL C.UTF-8
+ENV LC_ALL en_US.UTF-8
